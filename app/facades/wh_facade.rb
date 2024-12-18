@@ -370,50 +370,11 @@ class WhFacade
           :stats => stats,
           :weapons => weapons
         }
-        # if weapons == nil || weapons.empty?
-        #   binding.pry
-        # end
-        
-        # if stats == nil
-        #   binding.pry
-        # end
       end
       collection
     end
   end
 end
-
-# trying to create helper method to iterate and file profiles
-# def dig_selection_entries(entries)
-# entry_hash = 
-#             if entries[:selectionEntry].is_a?(Hash)
-#               [entries[:selectionEntry]]
-#             else
-#               entry[:selectionEntry]
-#             end
-#   entry_hash[:selectionEntry].each do |entry|
-#     if entry[:type] == "model" || entry[:type] == "unit"
-#       ....
-#     end
-#   end
-# end
-
-# def find_profiles(data)
-#   entry = []
-#   if data[:selectionEntries]
-#     data[:selectionEntries][:selectionEntry].
-#   end
-#   until entry[:profiles]
-#   end
-# end
-
-# sample character profile
-# {:name=>"Lychguard",
-# :stats=>["5\"", "5", "3+", "2", "7+", "1"],
-# :weapons=>
-#   [{:name=>"Warscythe", :typeName=>"Melee Weapons", :characteristics=>["Melee", "2", "3+", "8", "-3", "2", "Devastating Wounds"]},
-#   {:name=>"Hyperphase sword", :typeName=>"Melee Weapons", :characteristics=>["Melee", "3", "3+", "6", "-2", "1", "-"]},
-#   {:name=>"Dispersion Shield", :typeName=>"Abilities", :characteristics=>"The bearer has a 4+ invulnerable save."}]}
 
 def reformat_weapon_data(weapon_list)
     weapon_list.map do |weapon|

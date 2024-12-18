@@ -40,6 +40,8 @@ gem "faraday"
 gem "base64"
 gem 'rswag-api'
 gem 'rswag-ui'
+gem 'ruby-openai'
+gem 'dotenv-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -53,7 +55,6 @@ group :development, :test do
   gem "simplecov"
   gem 'shoulda-matchers'
   gem 'rswag-specs'
-
 end
 
 group :test do
