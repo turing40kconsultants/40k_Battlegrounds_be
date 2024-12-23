@@ -32,7 +32,7 @@ describe WhFacade do
     it "can format units info", :vcr do
       response = WhFacade.new.get_units_data_by_faction("Necrons.cat")
       clean_data = WhFacade.new.clean_units_data(response, @faction1).first
-  
+      
       expect(clean_data).to have_key(:name)
       expect(clean_data[:name]).to be_a(String)
   

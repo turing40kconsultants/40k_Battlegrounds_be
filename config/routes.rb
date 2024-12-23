@@ -18,4 +18,6 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  post 'battle_prompts', to: 'battle_prompts#create'
 end
